@@ -25,6 +25,7 @@ class FriendsList extends React.Component {
         return (
             <div>
                 <h1>Friends</h1>
+                <NewFriendForm />
                 <div className="friends">
                     {this.state.friendsList.map(friend => (
                         <div key={friend.id} className="friend">
@@ -34,7 +35,6 @@ class FriendsList extends React.Component {
                         </div>    
                     ))}
                 </div>
-                <NewFriendForm />
             </div>
         )
     }    
